@@ -1,0 +1,63 @@
+[gd_scene load_steps=3 format=3 uid="uid://crq4fxkmjaf3n"]
+
+[ext_resource type="Script" path="res://Cenas/Menu/Menu.gd" id="1_ecukt"]
+[ext_resource type="FontFile" uid="uid://dkx1f3sqhlsdj" path="res://Assets/PressStart2P-Regular.ttf" id="1_lrqbo"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_ecukt")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -119.5
+offset_top = -4.0
+offset_right = 119.5
+offset_bottom = 86.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_lrqbo")
+theme_override_font_sizes/font_size = 24
+text = "Jogar"
+
+[node name="Button2" type="Button" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -119.5
+offset_top = 96.0
+offset_right = 119.5
+offset_bottom = 186.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_lrqbo")
+theme_override_font_sizes/font_size = 24
+text = "Sair"
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -336.0
+offset_top = -104.0
+offset_right = 336.0
+offset_bottom = -34.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_lrqbo")
+theme_override_font_sizes/font_size = 32
+text = "A JORNADA DE SOFIA
+ NA TERRA DAS MEDIDAS"
+horizontal_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

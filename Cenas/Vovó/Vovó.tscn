@@ -1,0 +1,54 @@
+[gd_scene load_steps=7 format=3 uid="uid://cyfvwcunlbnjw"]
+
+[ext_resource type="Texture2D" uid="uid://cp0tyyg8kmyuc" path="res://Assets/Vovó/walk/vovó_walk0.png" id="1_c6uqa"]
+[ext_resource type="Script" path="res://Cenas/Vovó/Vovó.gd" id="1_jed01"]
+[ext_resource type="Texture2D" uid="uid://cubqqlx1hu21v" path="res://Assets/Vovó/walk/vovó_walk1.png" id="2_xv45f"]
+[ext_resource type="Texture2D" uid="uid://cjo36k632pe78" path="res://Assets/Vovó/walk/vovó_walk2.png" id="3_ya3u7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hwhub"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_c6uqa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_xv45f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ya3u7")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cri25"]
+radius = 12.0
+height = 38.0
+
+[node name="Vovó" type="CharacterBody2D"]
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_jed01")
+
+[node name="Animacao" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_hwhub")
+animation = &"right"
+
+[node name="Colisao" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_cri25")
