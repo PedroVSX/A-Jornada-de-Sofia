@@ -19,3 +19,5 @@ Sofia is a brave and intelligent girl who likes adventure. One day, at home, Sof
 
 **A Floresta das Palavras (The Words Forest)**
 - Sofia is now in The Words Forest, a dense forest that looks like fall. Again, a dialogue begins, but this one is just the guide congratulating Sofia.
+
+I'm still writing, please stand by :P
