@@ -1,5 +1,5 @@
 # Download
-https://mega.nz/file/zptBmRjQ#ew3mkFDXvh8-tsqleqLmZGAPmRQ6jBDY7ZLsJ0j_0qs
+https://www.mediafire.com/file/i3a87cd4objq4tz/A_Jornada_de_Sofia.exe/file
 
 # Introduction
 Hello, there!
